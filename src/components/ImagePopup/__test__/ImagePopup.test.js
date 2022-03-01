@@ -6,7 +6,6 @@ import ImagePopup from '../../ImagePopup/ImagePopup';
 
 test("Popup opens with correct props", () => {
     render(<Gallery/>);
-    const popupContainer =  screen.getByTestId('popupcontainer');
     const listItem =  screen.getAllByRole("figure", { class: 'gallery-grid__item'});
 
     const popup = render(<ImagePopup />);
